@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Booking App</title>
+</head>
+<body>
+<h1>Main page with users</h1>
+<h1 th:text="${message}"></h1>
+<ol>
+    <li th:each="users : ${users}" th:text="${user}"></li>
+</ol>
+<h2>Select action: </h2>
+<a href="/spring-intro/users/new">Create new user</a>
+<a href="/spring-intro/users/delete">Delete existing user</a>
+<a href="/spring-intro/users/update">Update existing user</a>
+</body>
+</html>
